@@ -39,24 +39,15 @@
 
 <body>
 
-<div class="col-md-3 header-right footer-bottom">
+<div class="" align="center">
                 <ul>
-                    <li> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal14">Add Admin</button></a>
-</li>
-<form method="post" action="admin.php">
-               		<li>
- 
-                     <button type="button" class="btn btn-info btn-lg" name="logout">Logout</button>
+                    <li> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal14">Add Admin</button>
+			
+                 <button type="button" onclick="window.location.href='admin.php'"  class="btn btn-info btn-lg" name="admin">admin</button>
+                  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal15">Add Service</button>
+		         
                     </li>
-                
-                </form>
-                <li> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal15">Add Service</button></a>
-</li>
-<li>
- 				
-                     <button type="button" onclick="window.location.href='orders.php'"  class="btn btn-info btn-lg" name="orders">Orders</button>
-                  
-                    </li>
+        
 </ul>
 
 </div>
@@ -125,32 +116,32 @@
   <div class="modal-body">
           <div class="form-group">
             <label for="usr">Type:</label>
-<input type="text" class="form-control"  name="type">
+<input type="text" class="form-control"  name="type" required>
 </div>
 </div>
         <div class="modal-body">
           <div class="form-group">
             <label for="usr">Title:</label>
-<input type="text" class="form-control"  name="title">
+<input type="text" class="form-control"  name="title" required>
 </div>
 </div>
 <div class="modal-body">
           <div class="form-group">
             <label for="usr">Description:</label>
-<textarea class="form-control"  name="description" ></textarea>
+<textarea class="form-control"  name="description" required></textarea>
 </div>
 </div>
   <div class="modal-body">
           <div class="form-group">
             <label for="usr">Price:</label>
-<input type="text" class="form-control"  name="price">
+<input type="text" class="form-control"  name="price" required>
 </div>
 </div>
 
   <div class="modal-body">
           <div class="form-group">
             <label for="usr">Image:</label>
-<input type="file" class="form-control"  name="filenames">
+<input type="file" class="form-control"  name="filenames" required>
 </div>
 </div>
  <div class="modal-footer">
@@ -163,7 +154,7 @@
 
 
 
-<div class="checkout">
+<div class="">
     <div class="container">
       <br>
         <div class="table-responsive checkout-right animated wow slideInUp" data-wow-delay=".5s">
@@ -192,8 +183,13 @@
 
     </div>
 </div>
-
-
+<br>
+<div align="center">
+	<form method="post" action="server.php">
+                     <button  type="submit" class="btn btn-info btn-lg" name="logout">Logout</button>
+         			</form>
+                  
+</div>
 
 </body>
 </html>

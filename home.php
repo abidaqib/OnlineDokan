@@ -39,7 +39,7 @@
         <div class="container">
             <div class="col-md-3 header-left">
                 <h1>
-                    <a href=""><img src="images/logo.png"></a>
+                    <a href="home.php"><img src="images/F_logo.jpg"></a>
                 </h1>
             </div>
             <div class="col-md-6 Soft-header-middle">
@@ -57,11 +57,13 @@
                     </div>
                     <div class="sear-sub">
                         <input type="submit" value=" ">
+
+
                     </div>
-                    <div class="clearfix"></div>
+                    <!-- <div class="clearfix"></div> -->
                 </form>
             </div>
-            <div class="col-md-3 header-right footer-bottom">
+            <div class="sear-sub">
                 <ul>
                     <li> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Log In</button>
                     </li>
@@ -88,13 +90,13 @@
         <div class="modal-body">
           <div class="form-group">
             <label for="usr">Email:</label>
-<input type="text" class="form-control"  name="email">
+<input type="email" class="form-control"  name="email" required>
 </div>
 </div>
   <div class="modal-body">
           <div class="form-group">
             <label for="usr">Password:</label>
-<input type="password" class="form-control"  name="password">
+<input type="password" class="form-control"  name="password" required>
 </div>
 </div>
  <div class="modal-footer">

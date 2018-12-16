@@ -46,7 +46,7 @@
         <div class="container">
             <div class="col-md-3 header-left">
                 <h1>
-                    <a href=""><img src="images/logo.png"></a>
+                    <a href="home.php"><img src="images/F_logo.jpg"></a>
                 </h1>
             </div>
             <div class="col-md-6 Soft-header-middle">
@@ -67,7 +67,7 @@
                     <div class="clearfix"></div>
                 </form>
             </div>
-            <div class="col-md-3 header-right footer-bottom">
+            <div class="sear-sub">
                 <ul>
                     <li> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Log In</button>
                     </li>
@@ -145,15 +145,18 @@
                                             <span class='item_price'>$subjects[5]</span>
                                         </div>   
                                     </div>
-                                    ";
-                                }
-                                    ?>
+                                
                                 </div>
                            </div>
             </div>
-        
+            <h3>Discretion: </h3><br>
+           <h4 style='bold'>$subjects[3]</h4>
    </div>
-</div>
+
+</div>    ";
+             }
+      ?>
+
 
 
 <div class="modal fade" id="myModal16" role="dialog">
@@ -167,19 +170,19 @@
         <div class="modal-body">
           <div class="form-group">
             <label for="usr">Phone Number:</label>
-<input type="text" class="form-control"  name="phone">
+<input type="text" class="form-control"  name="phone" required>
 </div>
 </div>
   <div class="modal-body">
           <div class="form-group">
             <label for="usr">Address:</label>
-<input type="text" class="form-control"  name="address">
+<input type="text" class="form-control"  name="address" required>
 </div>
 </div>
 <div class="modal-body">
           <div class="form-group">
             <label for="usr">Credit Card No:</label>
-<input type="text" class="form-control"  name="CNo">
+<input type="text" class="form-control"  name="CNo" required>
 </div>
 </div>
 

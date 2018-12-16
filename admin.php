@@ -35,27 +35,19 @@
     <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'>
     <script src="js/jquery.easing.min.js"></script>
+
+
 </head>
 
 <body>
 
-<div class="col-md-3 header-right footer-bottom">
+<div class="" align="center">
                 <ul>
                     <li> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal14">Add Admin</button>
-				</li>
-
-               	<li>
- 
-                     <button  type="button" class="btn btn-info btn-lg" name="logout">Logout</button>
-                </li>
-                
-          
-                <li> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal15">Add Service</button></a>
-				</li>			
-				<li>
- 				
-                     <button type="button" onclick="window.location.href='orders.php'"  class="btn btn-info btn-lg" name="orders">Orders</button>
-                  
+			
+                 <button type="button" onclick="window.location.href='orders.php'"  class="btn btn-info btn-lg" name="orders">Orders</button>
+                  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal15">Add Service</button>
+				
                     </li>
                 
                 
@@ -77,32 +69,32 @@
   <div class="modal-body">
           <div class="form-group">
             <label for="usr">Name:</label>
-<input type="text" class="form-control"  name="name">
+<input type="text" class="form-control"  name="name" required>
 </div>
 </div>
         <div class="modal-body">
           <div class="form-group">
             <label for="usr">Email:</label>
-<input type="text" class="form-control"  name="email">
+<input type="email" class="form-control"  name="email" required>
 </div>
 </div>
 <div class="modal-body">
           <div class="form-group">
             <label for="usr">Number:</label>
-<input type="text" class="form-control"  name="number">
+<input type="text" class="form-control"  name="number" required>
 </div>
 </div>
   <div class="modal-body">
           <div class="form-group">
             <label for="usr">Password:</label>
-<input type="password" class="form-control"  name="password">
+<input type="password" class="form-control"  name="password" required>
 </div>
 </div>
 
   <div class="modal-body">
           <div class="form-group">
             <label for="usr">Confrom Password:</label>
-<input type="password" class="form-control"  name="re_password">
+<input type="password" class="form-control"  name="re_password" required>
 </div>
 </div>
  <div class="modal-footer">
@@ -166,7 +158,7 @@
 
 
 
-<div class="checkout">
+<div class="">
     <div class="container">
       <br>
         <div class="table-responsive checkout-right animated wow slideInUp" data-wow-delay=".5s">
@@ -200,8 +192,13 @@
 
     </div>
 </div>
-
-
+<br>
+<div align="center">
+	<form method="post" action="server.php">
+                     <button  type="submit" class="btn btn-info btn-lg" name="logout">Logout</button>
+         			</form>
+                  
+</div>
 
 </body>
 </html>
